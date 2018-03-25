@@ -1,0 +1,12 @@
+
+Table 2. Software Environment Settings
+ 
+3.3 Evaluating Results
+We have successfully tested a pair of Hermitel network adapter with PCI Express 4-lane width directly connecting each other and HermiteII network adapter with PCI Express 8-lane width on the same environment as described in Table 1 and Table 2.Figure 2 shows the result of NetPIPE of HermiteI and HermiteII network adapters in the testing environment described above. NetPIPE started to send from 0 byte message size to 8388611 bytes message size trying to probe the maximal bandwidth. Latency of each pattern was also measured in NetPIPE.
+
+ 
+Fig. 2. NetPIPE of BONETx4(HermiteI)and BONETx8(Hermitell)
+
+Table 3. Hermitel network adapter on Supermicro¡¯s X8DT-L 
+
+Table 4. HermiteII network adapter on Supermicro¡¯s X8DT-L

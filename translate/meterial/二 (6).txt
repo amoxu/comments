@@ -1,0 +1,13 @@
+
+Latency is an important factor as well. In the future, we plan to continue our evaluations seeking for low latency by using more evaluating applications. MPI over BONET system will be another interesting research aspect either.
+
+References
+
+l. PCI-SIG, http://vm7w.pcisig.com/specifications/pciexpress
+
+2. Netperf, http://www.netperf.org/netperf
+
+3.iperf,http://sourceforge.net/projects/iperf
+
+4. NetPlPE(Network Protocol Independent Performance Evaluator),
+http://Www.sc1.ameslab.gov/netpipe

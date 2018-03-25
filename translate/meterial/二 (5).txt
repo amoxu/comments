@@ -1,0 +1,11 @@
+
+In Table 3 and Table 4, we summarize the evaluation results as a list including iperf, netperf in the same testing environment like NetPIPE was in. The measured data listed in Table 3 shows that iperf and netperf have almost the same results as the measured result of NetPIPE. HermiteII network adapter delivers improved performance in bandwidth especially in large messages than HermiteI network adapter by around 66% because of HermiteII can fully use the resource of what the PCI Express brings.
+
+Table 5. HermiteI 4-lane (x4) network adapter on different platforms
+
+Table 6. HermiteII 8-lane (x8) network adapter on different platforms
+
+In Table 5 and Table 6 we list the collections of bandwidth performance of HermiteI network adapter with PCI Express 4-lane width and HermiteII network adapter with PCI Express 8-lane width on different platforms along with different CPUs that we have tested. We found that the ability of CPU would affect the bandwidth performance. Table 6 reveals that using Intel Xeon 5570 CPU gained better numbers than the numbers of Intel Core i5 and Intel core E8400. The Intel Xeon 5570 CPU with Supermicro’s X8DTL-I has the best performance result among the evaluations. The Intel core i5 CPU has 13% improvement than the Intel core E8400. According to the experiments data, we suppose that if we apply more powerful CPU then we can achieve better performance result. By the evaluations above, the performance bottleneck is no longer be the network interface. It’s depends on how strong that your CPU is.
+
+4 Conclusions and Future Works
+In this work, the AKIBSYSTEMS introduced a new interconnect network system naming “BONET” system. We applied some popular bandwidth evaluating applications for our evaluations. For large messages, the performance results showed that using HermiteII 8-lane (x8) network adapter could achieve excellent bandwidth performance. In HPC world, bandwidth is not the only factor needed to be considered.

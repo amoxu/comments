@@ -1,0 +1,14 @@
+Isolated Distributed Architecture for Cloud-Storage Services 37
+
+References
+
+[1] Yi, Y., Chun, L.Y.: Security Issues on the cloud computing environment. Computer
+Knowledge and Technology (5) (2009)
+
+[2] From cloud computing to the cloud security. Information Systems Engineering (2009)
+
+[3] Yi, C.S.: On the cloud computing security issues. Network Security Technology and
+Application (10), 22—23 (2009)
+
+[4] Rabin, M.O.: Efficient Dispersal of Information for Security, Load Balancing, and Fault
+Tolerance. Journal of the Association for Computing Machinery (36), 2—4 (1989)

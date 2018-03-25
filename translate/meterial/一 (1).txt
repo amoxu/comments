@@ -1,0 +1,30 @@
+Isolated Distributed Architecture for Cloud-Storage Services Based on Structured Strategy
+Ying Gao and J ianlin Zheng
+College of Computer Science and Engineering, South China University of Technology, China
+gaoying@scut.edu.cn, helinz@qq.com
+
+Abstract. Cloud Security threats have greatly hindered the development of Cloud Computing and the promotion of cloud application, so how to protect the data stored in the cloud is not only the core issue of security, but also the biggest challenge of development. As these problems above, a trust-control  architecture based on the concept of Cloud Storage Service was creatively proposed. Based on the structured strategy and isolated distributed storage-framework, the architecture of cloud services can eliminate the concerns about cloud security and achieve a high degree of safe, reliable and available cloud storage. It’s rather a simple and efficient way proved by experiments.
+
+Keywords: Trust Mechanism, Security, Structure, Storage, Cloud, Service.
+1 Introduction
+To promote Cloud Computing is very hard, for customers, trust is considered as the
+key issue of cloud computing. People will trust their money into banks, because banks
+are state-owned and behind the legal guarantee of the Government, but the security of
+cloud providers' data centers get no third-party of any credibility in the institutional
+guarantee [1]. Thus users are afraid of sharing their data in cloud centers. Cloud
+Security has become the biggest problem encountered in the development of Cloud
+Computing; therefore, how to provide a trusted mechanism to meet the security needs
+in the cloud environment is now an urgent problem to be solved.
+2 Ideas of Structured Isolated Distributed Cloud-Storage Services
+2.1 The Way to Solve Cloud Security
+Relative to technology, cloud computing is essentially more of a model or a strategy
+on the innovation based on existing technologies. Cloud computing has changed the
+serving way, but hasn't overturned the traditional safe mode [2].
+
+The difference is the change of safety measures, the location of deployment of
+safety equipment and the main body of the responsibility for security. Similar to the
+traditional way, the way to solve the issues of cloud computing security is also the
+combination of these three elements of the strategy, technology and people [3].
+
+Z. Du (Ed): Proceedings of the 2012 International Conference of MCSA, AISC 191, pp. 31—37.
+springerlink.com © Springer-Verlag Berlin Heidelberg 2013

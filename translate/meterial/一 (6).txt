@@ -1,0 +1,32 @@
+36 Y. Gao and J. Zheng
+
+and cloud-storage service safety certification of various cloud providers. Therefore,
+this line of defense is very solid, and reliable cloud providers also protect the
+authority of the security of the system. The solution was through system simulation
+and verification in the LINUX environment, and the information dispersal algorithms
+were compared.
+
+In contrasting schema-based dispersal algorithm with information dispersal
+algorithms, the inputs of the experiments are: data files with User structure (Fig. 2),
+the length is 1M, n = [5, 15]; the broken sub-unit of schema-based dispersal algorithm
+is file, and its basic granularity is table; m=n-l in information dispersal algorithms.
+Experiments were repeated 10 times averaged to obtain the time-costs of dispersion and reconstruction (Fig. 3).Figures show that the efficiency of the schema-based dispersal algorithm is better than the information dispersal algorithms', and there is a linear relationship between its efficiency and the size of the original data file.
+
+Ti‘e cost Of data broken ‘ Tile cost of datsrreconst ruclicm
+A 9
+S: 'l n a l n o . . o n o a g l 0 . ‘ . 0 . .
+5 e 7 z 9 1:3 11 1: 13 u 15 “I ' g . , I. 11 i f, H 1.»
+Fig. 3. Time cost of data-broken and data-reconstruction
+4 Conclusion
+Compared with distributed storage, this article creatively proposes a trust-control
+architecture based on the concept of cloud storage service. Users no longer have to
+worry about the security of cloud storage; it removes the biggest obstacle faced in the
+promotion of cloud, and has a great significance to the development of cloud.
+Acknowledgement. The research is supported by:
+0 Science and Technology Planning Project of Guangdong Province
+(2009B010800047).
+0 Ministry of Education University-Industry-Research Project of Guangdong
+Province (2009B080702037).
+0 Ministry of Education University-Industry-Research Project of Guangdong
+Province (2010B090400535).
+0 The Fundamental Research Funds for the Central Universities (201 12M0068).

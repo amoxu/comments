@@ -1,0 +1,19 @@
+
+
+PCI-SIG introduced PCIe 1.0a, with a data rate of 250 MB/s and a transfer data rate of 2.5 GT/s in 2003.
+
+In 2005, PCI-SIG introduced PCIe 1.1. This was fully compatible with PCI Express 1.0a and updated some specification includes clarifications and several improvements. The data rate was still the same as PCIe 1.0a.
+
+In 2007, PCI-SIG announced the PCI Express Base 2.0 specification._The PCIe 2.0 standard doubled the per-lane throughput from the PCIe 1.0 standard's 250 MB/s to 500 MB/s. This means a 32-lane PCI connector (x32) can support throughput up to aggregated bandwidth 16 GB/s. The base clock also doubled from 2.5GHz to 5GHz.
+
+In addition, the PCI Express based systems I/O devices can connect to memory controller through I/O Bridge, naming as ¡°Root Complex¡±. PCI Express is still under development and improvement. The current PCI Express implementation is version 3.0. We are not going to describe the PCI Express them in detail. Further information can be found in [1].
+
+2.1 BONET System
+
+The BONET system architecture was proposed by AKIBSYSTEM in 2009. Among the current network interconnect system over Ethernet by PCIe slot, the common way to realize it is to develop chipsets which can transform the PCIe 2.0 protocol to Ethernet protocol on a specific carrier for transmission such as 1 Gigabit Ethernet and 10 Gigabit Ethernet. Therefore we; AKIBSYSTEMS think the packet transformation in both transmitting and receiving packets paths cost extra protocol transformation overhead. To eliminate such kind of overhead, we proposed a network interconnect system simply using PCIe 2.0 protocol to do the transmission instead of transforming to Ethernet or any other protocols. Compared to the 10 Gigabit Ethernet, packets which are coming from PCIe 2.0 slot through BONET system still PCIe packets. We realize the PCIe over Ethernet in BONET system without chipset managing protocol transformation. By BONET system, we can fully access the bandwidth that PCIe 2.0 brings. Further evaluations will illustrate the actual performance results in next section.
+
+3 Performance Evaluation
+
+3.1 Evaluating Applications
+
+In this section, we evaluated AKIBSYSTEMS¡¯s BONET system using three different evaluation applications. First is Netperf version 2.4.5 [2], which can be used to measure the bandwidth performance using different patterns in evaluating your network systems. The Netperf can not only measure the bandwidth of TCP and streams but also latency of streams as well. Second is iperf 2.0.5 [3], which was developed by NLANR/DAST for finding maximal bandwidth of TCP and UDP. The latest one is NetPIPE version 3.7.l[4]. NetPIPE has several kinds of protocol evaluation tools. It can be used to measure the TCP, MP1 and so on. In this paper we only focus on TCP performance by using NPtcp under NetPIPE categories. We didn¡¯t set any specific parameters while using these applications. The parameters settings of netperf, iperf and NetPIPE were almost set to default settings. Followings are the parameters and commands that we set to the applications.

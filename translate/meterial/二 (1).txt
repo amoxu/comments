@@ -1,0 +1,19 @@
+Performance Evaluation of BONET with PCI Express 2.0
+Hide Nakayama, Kentaro Iwasawa, Chen Chi Wu, and Takuo Fugunaga
+AKIBSYSTEMS Inc. Taiwan
+{hide,kentaro,timothy_wu,takuo}@akibsystems.com
+Abstract. In this paper, the AKIBSYSTEMS presents a novel interconnect network system; the BONET system architecture, which provides sufficient bandwidth for cloud computing applications using purpose. We developed the BONET system architecture based on PCI Express (Generation 2) as network interface over Ethernet. By using PCI Express 2.0 (Generation 2), it not only improves the throughput and the latency, but also brings the power to parallel computing. The latency measurement will not be covered in this paper. Our evaluation results show that using the AKIBSYSTEMS¡¯S BONET systems can achieve significantly bandwidth performance results overall.
+
+Keywords: BONET, Hermite, HPC.
+1 Introduction
+In HPC (High Performance Computing) and distributed parallel computing aspects, the bottleneck mostly appears in the network interfaces, handling data transmissions from nodes to nodes. Assume there are several computing nodes which have strong computing abilities, and these nodes have finished the designated computing data segment within a short duration. However, all of the computed data are queued in a Gbe (Giga bit Ethernet) network interface card, waiting for data transmissions. This limits the power of distributed parallel computing due to the network interface being the performance bottleneck. In BONET system, we unleash the limitation of bottleneck by providing higher bandwidth ability instead of other existing interconnect architectures. Moreover, the BONET system is fully compatible with all TCP/IP and UDP applications. In section 3, we are going to illustrate the measured bandwidth performance results on different platforms with different CPUs by using three kinds of benchmark evaluating applications. We gained over 12Gbps in AKIBSYSTEMS¡¯s HermiteI 4-lane network adapter and nearly 21Gbps in AKIBSYSTEMS¡¯S HermiteII 8-lane network adapter. The evaluation results reveal the excellent capability of BONET system, break the current network bottleneck.
+
+2 Background
+Before PCI Express has been adapted as a standard, PCI was widely used in PC (Personal Computer) architecture. PCI is a way to connect the peripherals such as sound card, network card, and video card. However, PCI has some shortcomings either. As the improvement of the power of CPU, the speed of network card and video card had gotten, the PCI still stayed in bus frequency of 33MHz or 66MHZ at most, and only provides 32bits wide long instruction access. In 2002, the PCI-SIG and Arapahoe Work Group finished the 3GIO draft specification, renaming it "PCI Express" formally which its abbreviation is PCIe. The evolutions of PCI Express are described as follows.
+
+
+
+
+Corresponding author.
+R.-S. Chang, T.-h. Kim, and S.-L. Peng (Eds.): SUComS 2011, CCIS 223, pp. 125-130, 2011.
+Springer-Verlag Berlin Heidelberg 201l

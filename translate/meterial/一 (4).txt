@@ -1,0 +1,9 @@
+34 Y. Gao and J. Zheng
+ 
+Fig. 2. The basic process for structured isolated distributed storage
+2.5 The Method of Data Separation
+As early as before the coming of cloud computing, Data separation and reconstruction in a distributed system have made great progress, currently, the most common and effective methods are rooted in information dispersal algorithms (IDA or RS), but in the cloud-storage services architecture proposed in this article, the separation and reconstruction of data are based on the information with its own schema. This simple and efficient data dispersion algorithm has a lower storage, computational and bandwidth cost than IDA and RS.
+
+2.5.1 The Method of Data Separation
+
+The basic idea of information dispersal algorithms based on redundant coding techniques is that a length L of the file F is split into n slices Fi, (1 <= i <= n) in such a way that the file can be reconstructed by any m slices. In space, we can see that the sum of the n-slices Fi, is as n/m times as original file, n/m is greater than or close to l. IDA equally divides the data volume D required to be distributed into fragments (size m).Assuming the size N of the volume is I D I, then the number of fragments N' is N/m. The data is encoded as n piece of data using stage independent n*m vector matrix multiplication, and its size is N'. The only difference between RS and IDA is that RS uses stage independent (n-m)*m Vander monde matrix to calculate the checksum data for each piece of data, then constitute the n fragments with the original data in accordance with the data left-justified way similar to RAID 6 parity. In the case of the same 11, m and fault fragment data numbers, the time cost of IDA and RS is basically the same, but with the increase of n and m, the operating efficiency of the RS method will be slightly higher than the IDA [4].

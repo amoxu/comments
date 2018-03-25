@@ -1,0 +1,55 @@
+32 Y. Gao and J. Zheng
+
+2.2 The Concept of Cloud Storage Service
+
+The Cloud storage is a extension of cloud—computing concept in the infrastructure
+layer, however, it‘s currently mainly used as an attachment of cloud—computing
+platform, not as an independent standardized cloud service. In addition, cloud
+providers have built their own data centers; data just exists in respective centers.
+
+Cloud computing means that the IT infrastructure runs as a service, and the service
+can be anything from the rental of the original hardware to using third—party APIs.
+Similarly, storage facilities should also be used as a basic resource of the cloud
+environment. The future of cloud storage should be cloud-storage services.
+
+As the development of next—generation cloud storage, Storage As a Service is a
+change to existing way, it is a special form of architecture services. This cloud storage
+service is also transparent to users. It doesn't refer to a specific device or a cloud
+provider's cloud storage centers, it means the aggregates consisting of storage devices
+distributed in different physical geographical or various providers‘ storage—centers and
+users can use the services provided by a number of different cloud-storage centers.
+
+The core of cloud storage service is the combination of cloud service agreements
+with cloud storage system and uses opening service interface standards to achieve the
+transformation of cloud storage to cloud—storage service. It’s the core idea of the
+architecture proposed as the follow in this article.
+
+2.3 The Solution of Isolated Distributed Architecture for Cloud-Storage
+Services Based on Structured Strategy
+The isolated distributed cloud—storage services based on structured strategy have 3
+aspects: structured, decentralized and isolated distributed storage. In essence, it breaks
+data into a couple of individually meaningless subsets of data basing on the scheme of
+data, and then use the isolated distributed cloud—storage services belonging to
+different cloud providers to store the subsets. For the cloud, it provides a secure
+available storage solution and can be trusted (Shown in Fig. 1).
+Access Layer Q® & ﬂ @
+Application Interface
+Layer
+instances of Data-broken protocol instances of Data-reconstructed
+Storage sen/ice
+Agreement Management
+_
+storage servwe Web Service APIs File-based APIs Block-based APIs Other APIs
+WNW
+~ Amazon-133 ~ NirvanixSDN 0 CleverSafe o Zena
+. WindowsAzure o Zena . Clouan've . Egnm
+~ Mezeoplatfortn ~ IBM 0 CleverSafe
+,. ,,,,,,,,,,,,,BﬂsisManésssmentLax%£,,,,,,,,,,,,,,,,
+Céiii’éii‘i’“ ir’énclfyaéfju; ‘ ir“‘cOnwn-l;¢;uibuuui{
+File glyisdmn, glazing; Igamdfjfiicssx s 2>eJC ter
+Cloud storage system . l ‘~~.C0mpuﬁng.~ 21199951?!” We ,.
+layer Stora e Layer
+Storage device (NAS, FC, Iscsi, m)
+outage.“ d gm... . c. .
+n ,
+Fig. 1. Isolated distributed Services Architecture based on structured strategy

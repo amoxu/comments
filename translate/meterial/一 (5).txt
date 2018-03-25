@@ -1,0 +1,16 @@
+Isolated Distributed Architecture for Cloud-Storage Services 35
+
+2.5.2 The Information Dispersal Algorithm Based on Schema
+The data dispersion algorithm based on the structure is rooted in the duality of information: form and content. The data of no schema does not exist, as long as the data exists in systems, whether it is stored or applied, it has its own schema. Data needs to be resolved and demonstrated its qualified sense, this is the content of data; how to construct or parse the data is the form of data that schema reflects. Thus, a complete and effective information object is a unity of form and content.
+
+In the process of application, data all has its own form of organization (referred to here as a schema), the dispersion algorithm based on the structure of data is in fact decentralized using the schema that comes with the data, such as to a length L of information I, using the data field, table or file as the basic particle size, the form and content of the data are stripped out and data is dispersed into n data subsets Si (1 S i S
+n) with the same schema , Li corresponds to the length of the Si (1 S i S n), where 21 Li =L.
+
+In space, the total length of data subsets in the algorithm based on schema equals to the original file's and the required storage space is less than the information dispersal algorithms' (IDA, RS); In time, because it is based on the data schema to simply segment and restructure with the integration of the structuring stage and the parsing stage about data, it is very efficient. It doesn’t require coding with vector matrix multiplication, so the operating efficiency is better than the information dispersal algorithms. In addition, to avoid unnecessary duplication, disaster recovery and error
+correction processes are put on the cloud-storage services in the lower layer provided by various cloud providers, so it can highly reduce the consumption of time and space.
+
+3 System Analysis and Verification
+
+The architecture is different from the traditional encryption methods on ensuring information security; it uses the cryptography mechanisms in the organizational structure of information making the information content and form of separation, combined with the isolated distributed cloud-storage service solution to establish the Information Trust-System to ensure the reliability, availability and privacy of information.
+
+Application data in the program after structured broken becomes separate meaningless subsets, and all the subsets are isolatedly distributedly stored in the cloud-storage mediums provided by different cloud providers with the pulled out schema and mapping file. Separate one or several data sub-bodies are not valid, only the schema mapping with all the required subsets can reconstruct the original message-body. Such content and form of isolated sharing, mutual checks and balances of the various cloud providers ensure the security of internal and external information,and users have no need to worry about the invasion of the cloud data from external hackers or internal staffs or users of cloud providers, theft and abuse etc. such a series of threats. To breakthrough the defense line of the architecture, at least need to pass the following checkposts: user security authentication, the key of schema mapping
