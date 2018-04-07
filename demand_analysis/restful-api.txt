@@ -1,0 +1,199 @@
+1.	用户中心
+a)	注册
+i.	注册用户	
+/user/reg
+ii.	选择关注内容	
+/user/reg/feature
+b)	登录	
+/user/login
+c)	用户信息
+i.	获取	
+/user/info/{id}
+ii.	修改	
+post	
+/user/info/modify
+d)	头像
+i.	获取	
+/user/icon/{id}
+ii.	修改	
+post user/icon/moify
+e)	权限设置
+i.	获取	
+/user/permission
+ii.	修改	
+post	
+/user/permission/modify
+f)	修改邮箱	
+post	
+/user/mail/modify
+
+g)	用户关注
+i.	关注列表	
+/friend/{id}
+ii.	取消关注	
+/friend/cancel/{id}
+
+iii.	发送消息	
+post /msg/send/{id}
+i.	留言列表	
+/msg
+ii.	回复留言	
+post /msg/send/{id}
+iii.	删除留言	
+/msg/delete/{mid}
+
+h)	用户动态
+i.	动态列表	
+/events/{uid}
+ii.	动态回复	
+/events/comment/reply/{eid}
+iii.	动态回复列表	
+/events/comment/list/{eid}
+iv.	点赞数		
+/events/comment/likes/{eid}
+v.	删除动态	
+/events/delete/{eid}
+1.	动态
+a)	发表动态	
+post /events/publish
+b)	最新动态列表	
+/events/new
+c)	评价列表	
+get /events/comment/{eid}
+d)	评价动态	
+post /events/comment/{eid}
+e)	评价动态点赞	
+/events/comment/likes/{ecid}
+f)	回复列表	
+get /events/comment/reply/{ecid}
+g)	回复评价	
+post /events/comment/reply/{ecid}
+h)	回复评价点赞	
+/events/comment /like/{ecid}
+
+2.	首页
+a)	轮播
+i.	获取轮播内容	
+/index/carousel
+b)	主页
+i.	热评1条	
+/index/comment
+ii.	歌曲推荐2条	
+/index/song
+iii.	话题标题3个	
+/index/topics
+iv.	话题内容2个	
+/index/topics/talk
+
+a)	热评
+i.	最新	
+/buzz/new
+ii.	随机	
+/ buzz /random
+iii.	热门	
+/ buzz /hot
+iv.	朋友	
+/ buzz /friend
+v.	评价列表	
+get / buzz /comment/{eid}
+vi.	评价动态	
+post / buzz /comment/{eid}
+vii.	评价动态点赞	
+/ buzz /comment/likes/{ecid}
+viii.	回复列表	
+get / buzz /comment/reply/{ecid}
+ix.	回复评价	
+post / buzz /comment/reply/{ecid}
+x.	回复评价点赞	
+/ buzz /comment /like/{ecid}
+
+d)	好歌
+i.	最新	
+/songs/new
+ii.	随机	
+/songs/random
+iii.	热门	
+/songs/hot
+iv.	朋友	
+/songs/friend
+v.	评价列表	
+get /song/comment/{eid}
+vi.	评价动态	
+post / song /comment/{eid}
+vii.	评价动态点赞	
+/ song /comment/likes/{ecid}
+viii.	回复列表	
+get / song /comment/reply/{ecid}
+ix.	回复评价	
+post / song /comment/reply/{ecid}
+x.	回复评价点赞	
+/ song /comment /like/{ecid}
+
+e)	推荐
+i.	热评3-5条	
+/recomment/comments
+ii.	歌曲3-5首	
+/recomment/songs
+iii.	附近的人3-5个	
+/recomment/nearby
+
+f)	话题
+i.	热门话题4个	
+/topic/head	topic{hot:[],new:[]}
+ii.	最新话题4个	
+/topic/head topic{hot:[],new:[]}
+iii.	搜索话题内容	
+/search/topic/{topic}
+iv.	创建话题	
+post /topic/crate/{topic}
+v.	话题列表	
+/topic/{topic}
+vi.	评价列表	
+get /topic/comment/{eid}
+vii.	评价动态	
+post / topic /comment/{eid}
+viii.	评价动态点赞	
+/ topic /comment/likes/{ecid}
+ix.	回复列表	
+get / topic /comment/reply/{ecid}
+x.	回复评价	
+post / topic /comment/reply/{ecid}
+xi.	回复评价点赞	
+/ topic /comment /like/{ecid}
+
+3.	搜索
+a)	搜索热评	
+/search/comment/{key}
+b)	搜索歌曲	
+/search/songs/{key}
+c)	搜索用户	
+/search/user/{key}
+d)	搜索话题	
+/search/topic/{key}
+
+4.	动态
+a)	发表动态	
+post /events/publish
+b)	最新动态列表	
+/events/new
+c)	评价列表	
+get /events/comment/{eid}
+d)	评价动态	
+post /events/comment/{eid}
+e)	评价动态点赞	
+/events/comment/likes/{ecid}
+f)	回复列表	
+get /events/comment/reply/{ecid}
+g)	回复评价	
+post /events/comment/reply/{ecid}
+h)	回复评价点赞	
+/events/comment /like/{ecid}
+
+
+5.	活动
+a)	活动列表	
+/activity
+6.	附近的人
+a)	列表		
+/nearby
+
