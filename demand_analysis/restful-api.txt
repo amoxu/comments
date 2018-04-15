@@ -1,9 +1,11 @@
 1.	用户中心
 a)	注册
-i.	注册用户	
+i.	注册用户	（当注册一个用户需要初始化用户的相关信息）
 /user/reg
 ii.	选择关注内容	
 /user/reg/feature
+
+/feature
 b)	登录	
 /user/login
 c)	用户信息
@@ -11,27 +13,34 @@ i.	获取
 /user/info/{id}
 ii.	修改	
 post	
-/user/info/modify
+/user/info
 d)	头像
 i.	获取	
 /user/icon/{id}
 ii.	修改	
-post user/icon/moify
+post user/icon
 e)	权限设置
 i.	获取	
 /user/permission
 ii.	修改	
 post	
-/user/permission/modify
+/user/permission
 f)	修改邮箱	
 post	
-/user/mail/modify
+/user/mail
+g)	修改密码	
+post	
+/user/password
+h)	找回密码
+/user/password/1
+/user/password/2
+
 
 g)	用户关注
 i.	关注列表	
-/friend/{id}
-ii.	取消关注	
-/friend/cancel/{id}
+/friend/{id}?limit=0&offset=0
+ii.	取消关注	delete
+/friend/{id} 
 
 iii.	发送消息	
 post /msg/send/{id}

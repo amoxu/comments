@@ -1,0 +1,17 @@
+nginx默认会限制上传文件的大小为1M
+
+https://icon.amoxu.ltd/icon?{email-md5} 文件上传
+
+限制图片类型
+
+md5作为文件名，重复覆盖
+
+
+##		private int status;
+##		private T data;
+##		private String msg = "";
+{
+	msg:''
+	,status:''	## 0:success 1:error 
+	,data:'{md5}'
+}
